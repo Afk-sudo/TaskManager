@@ -29,6 +29,7 @@ namespace TaskManager.ViewModal
                     return;
                 _isDone = value;
                 App.Database.SaveTask(this);
+                OnTaskMarkChanged();
             }
         }
         private bool _isDone = false;
@@ -43,6 +44,12 @@ namespace TaskManager.ViewModal
         protected virtual void OnPropertyChanged(string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public event TaskMarkChangedEventHandler TaskMarkChanged;
+        public delegate void TaskMarkChangedEventHandler(Task sender);
+        protected virtual void OnTaskMarkChanged()
+        {
+            TaskMarkChanged?.Invoke(this);
         }
     }
 }

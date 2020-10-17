@@ -4,13 +4,14 @@ C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\bin\Debug\netstan
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\bin\Debug\netstandard2.0\TaskManager.pdb
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.csprojAssemblyReference.cache
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.AssemblyInfo.cs
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.dll
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\ref\TaskManager.dll
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.pdb
-C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\View\AdditionalPage.xaml.g.cs
-C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\View\EditingPage.xaml.g.cs
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\TaskManager.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\Views\AdditionalPage.xaml.g.cs
+C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\Views\AllTask.xaml.g.cs
+C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\Views\CompliteTask.xaml.g.cs
+C:\Users\User\source\repos\TaskManager\TaskManager\TaskManager\obj\Debug\netstandard2.0\Views\EditingPage.xaml.g.cs

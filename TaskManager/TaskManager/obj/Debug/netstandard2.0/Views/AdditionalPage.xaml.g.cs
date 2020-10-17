@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TaskManager.View.AdditionalPage.xaml", "View/AdditionalPage.xaml", typeof(global::TaskManager.View.AdditionalPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TaskManager.Views.AdditionalPage.xaml", "Views/AdditionalPage.xaml", typeof(global::TaskManager.View.AdditionalPage))]
 
 namespace TaskManager.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\AdditionalPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AdditionalPage.xaml")]
     public partial class AdditionalPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

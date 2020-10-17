@@ -8,12 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TaskManager.View.EditingPage.xaml", "View/EditingPage.xaml", typeof(global::TaskManager.View.EditingPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TaskManager.Views.EditingPage.xaml", "Views/EditingPage.xaml", typeof(global::TaskManager.View.EditingPage))]
 
 namespace TaskManager.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\EditingPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\EditingPage.xaml")]
     public partial class EditingPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

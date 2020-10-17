@@ -10,13 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace TaskManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AdditionalPage : ContentPage
+    public partial class EditingPage : ContentPage
     {
-        public AdditionalPage(TaskList taskList)
+        public EditingPage(TaskList taskList)
         {
             InitializeComponent();
             this.BindingContext = taskList;
         }
-
+        private void GoToMainPage(object sender, EventArgs eventArgs)
+        {
+            Navigation.PopModalAsync();
+        }
     }
 }

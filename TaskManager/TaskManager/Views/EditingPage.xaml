@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManager.View.EditingPage"
+             BackgroundColor="#2a2b42">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="30, 20" >
+                <Label Text="Editing task" FontFamily="FontawesomeFont" FontSize="20" TextColor="#f0f2fa" BackgroundColor="#34344b" Padding="10"/>
+            </StackLayout>
+            <Entry WidthRequest="200" Text="{Binding NewTaskTitle}" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="#e0e2ee" Placeholder="Task"/>
+            <StackLayout BackgroundColor="#2f3046" HeightRequest="60">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="60" VerticalOptions="Center" Spacing="30">
+                    <Button BackgroundColor="#2f3046" Clicked="GoToMainPage" FontFamily="FontawesomeFont" Text="&#xf015;" TextColor="#838aa1" WidthRequest="35" HeightRequest="35" VerticalOptions="Center"/>
+                    <Button Command="{Binding EditTaskCommand}" Clicked="GoToMainPage" BackgroundColor="#2f3046"  FontFamily="FontawesomeFont" Text="&#xf00c;" TextColor="#838aa1" WidthRequest="35" HeightRequest="35" VerticalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

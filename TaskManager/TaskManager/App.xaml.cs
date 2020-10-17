@@ -1,5 +1,7 @@
 ﻿using System;
 using TaskManager.Modal;
+using TaskManager.View;
+using TaskManager.ViewModal;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,13 +22,15 @@ namespace TaskManager
             }
         }
         private static TaskRepository _database;
-
-           
+        public static TaskList TaskList { get; private set; }
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            TaskList = new TaskList();
+            CarouselPage carouselPage = new CarouselPage();
+            carouselPage.Children.Add(new AllTask());
+            carouselPage.Children.Add(new CompliteTask());
+            MainPage = carouselPage;
         }
 
         protected override void OnStart()

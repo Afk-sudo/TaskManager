@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
+             x:Class="TaskManager.AllTask"
+             BackgroundColor="#2a2b42">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="30, 20" >
+            <Label Text="To do list"  FontFamily="FontawesomeFont" FontSize="20" TextColor="#f0f2fa" BackgroundColor="#34344b" Padding="10"/>
+            <Label Text="Performeds &#xf061;" FontFamily="FontawesomeFont" TextColor="#707283" FontSize="14" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+        <ListView x:Name="TodoList" ItemsSource="{Binding ConformidadeTasks}" SelectedItem="{Binding SelectedTask}" HasUnevenRows="True" Margin="30, 5" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Frame CornerRadius="5" Padding="10" Margin="0, 5" BackgroundColor="#fff">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="50"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding TaskTitle}" FontFamily="FontawesomeFont" VerticalOptions="Center" TextColor="#4a4849"/>
+                                <CheckBox IsChecked="{Binding IsDone}" Grid.Column="1" HorizontalOptions="End" Color="#27cea9"/>
+                            </Grid>                           
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout BackgroundColor="#2f3046" HeightRequest="60">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="60" VerticalOptions="Center" Spacing="30">
+                <Button x:Name="AdditionButton" BackgroundColor="#2f3046" Clicked="OpenAdditionPage" FontFamily="FontawesomeFont" Text="&#xf067;" TextColor="#838aa1" WidthRequest="35" HeightRequest="35" VerticalOptions="Center"/>
+                <Button x:Name="EditButton" BackgroundColor="#2f3046" Clicked="OpenEditingPage"  FontFamily="FontawesomeFont" Text="&#xf304;" TextColor="#838aa1" WidthRequest="35" HeightRequest="35" VerticalOptions="Center"/>
+                <Button Command="{Binding DeleteTaskCommand}" BackgroundColor="#2f3046" FontFamily="FontawesomeFont" Text="&#xf1f8;" TextColor="#838aa1" WidthRequest="35" HeightRequest="35" VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
